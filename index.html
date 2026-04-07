@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Elmir Aymen — Developer portfolio. Oujda, Morocco." />
+  <title>ELMIR AYMEN | INIT_CONNECTION</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: "var(--accent)",
+            surface: "var(--surface)",
+            muted: "var(--muted)",
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="scanlines min-h-screen grid-bg">
+  <header class="fixed top-0 left-0 right-0 z-50 border-b border-[var(--border)] bg-[var(--bg)]/90 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-4">
+      <a href="#home" class="text-accent font-semibold tracking-tight text-sm md:text-base hover:opacity-90">
+        ELMIR_
+      </a>
+      <nav class="flex flex-wrap items-center gap-4 md:gap-6 text-xs md:text-sm mobile-nav">
+        <a href="#home" class="nav-link text-[var(--muted)]">Home</a>
+        <a href="#about" class="nav-link text-[var(--muted)]">About</a>
+        <a href="#skills" class="nav-link text-[var(--muted)]">Skills</a>
+        <a href="#projects" class="nav-link text-[var(--muted)]">Projects</a>
+        <a href="#contact" class="nav-link text-[var(--muted)]">Contact</a>
+      </nav>
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme">
+        <span id="themeIcon" class="text-lg">☀</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <!-- Hero -->
+    <section id="home" class="min-h-[90vh] flex items-center">
+      <div class="max-w-6xl mx-auto px-4 py-16 w-full">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div>
+            <p class="text-accent text-sm md:text-base mb-4 animate-fade-up">
+              &gt; SYSTEM READY. ESTABLISHING SECURE CONNECTION<span class="cursor-blink"></span>
+            </p>
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-2 animate-fade-up delay-1">
+              ELMIR AYMEN
+            </h1>
+            <h2 class="text-lg md:text-2xl text-[var(--muted)] font-medium mb-8 animate-fade-up delay-2">
+              SOFTWARE DEVELOPER · WEB &amp; AUTOMATION
+            </h2>
+            <p class="text-[var(--muted)] text-sm max-w-xl mb-8 animate-fade-up delay-3">
+              21 · Oujda, Morocco · Building reliable interfaces and sharpening my stack every day.
+            </p>
+            <div class="flex flex-wrap gap-4 animate-fade-up delay-4">
+              <a href="#projects" class="btn-primary">[ ACCESS PORTFOLIO ]</a>
+              <a href="mailto:elmiraymen2@gmail.com" class="btn-primary border-[var(--muted)] text-[var(--muted)] hover:border-accent hover:text-accent hover:bg-transparent">
+                [ EMAIL ME ]
+              </a>
+            </div>
+          </div>
+          <div class="flex justify-center lg:justify-end animate-fade-up delay-5">
+            <div class="relative flex flex-col items-center w-full max-w-sm">
+              <div class="profile-frame w-full md:max-w-[20rem]">
+                <div class="profile-frame-inner">
+                  <img
+                    src="assets/profile.png"
+                    alt="Elmir Aymen"
+                    width="400"
+                    height="533"
+                    class="bg-[var(--surface)]"
+                  />
+                </div>
+              </div>
+              <p class="text-center text-xs text-accent mt-4 font-medium tracking-widest opacity-80">
+                ELMIR AYMEN · SCAN
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-20 border-t border-[var(--border)] bg-[var(--bg-elevated)]/50">
+      <div class="max-w-6xl mx-auto px-4">
+        <p class="text-accent text-sm mb-2">&gt; _cat profile.txt</p>
+        <h3 class="text-2xl md:text-3xl font-bold mb-8">About</h3>
+        <div class="max-w-3xl space-y-4 text-[var(--muted)] text-sm md:text-base leading-relaxed mb-12">
+          <p>
+            I am a <strong class="text-[var(--text)]">21-year-old developer</strong> from
+            <strong class="text-[var(--text)]">Oujda, Morocco</strong>, focused on writing clear code,
+            responsive layouts, and small tools that save time.
+          </p>
+          <p>
+            I enjoy turning ideas into working pages: semantic HTML, maintainable CSS, and JavaScript
+            when the UI needs logic. On the backend side I use <strong class="text-[var(--text)]">Python</strong>
+            for scripts, data, and automation.
+          </p>
+          <p>
+            Always learning—whether that is a new framework pattern, Git workflow, or how to ship faster
+            without breaking accessibility.
+          </p>
+        </div>
+
+        <p class="text-accent text-sm mb-2">&gt; _mail --compose</p>
+        <h4 class="text-lg font-semibold mb-4 text-[var(--text)]">Send a message</h4>
+        <p class="text-[var(--muted)] text-xs mb-6 max-w-xl">
+          Submissions are delivered to <span class="text-accent">elmiraymen2@gmail.com</span> (via FormSubmit).
+          First time you use it, check your inbox to confirm the forwarding address.
+        </p>
+        <form
+          class="max-w-xl space-y-4"
+          action="https://formsubmit.co/elmiraymen2@gmail.com"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="Portfolio — message from contact form" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <div>
+            <label class="form-label" for="contact-name">Name</label>
+            <input class="form-input" id="contact-name" name="name" type="text" required autocomplete="name" placeholder="Your name" />
+          </div>
+          <div>
+            <label class="form-label" for="contact-email">Email</label>
+            <input class="form-input" id="contact-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" />
+          </div>
+          <div>
+            <label class="form-label" for="contact-message">Message</label>
+            <textarea class="form-textarea" id="contact-message" name="message" required placeholder="Your message…"></textarea>
+          </div>
+          <button type="submit" class="btn-primary">[ SEND MESSAGE ]</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-20 border-t border-[var(--border)]">
+      <div class="max-w-6xl mx-auto px-4">
+        <p class="text-accent text-sm mb-2">&gt; _list --skills</p>
+        <h3 class="text-2xl md:text-3xl font-bold mb-4">Languages &amp; tools</h3>
+        <p class="text-[var(--muted)] text-sm mb-10 max-w-2xl">
+          Core technologies I use regularly. Hover a card for a quick note.
+        </p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <article class="skill-card border border-[var(--border)] bg-[var(--surface)] p-5 rounded-sm">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-2xl" aria-hidden="true">◆</span>
+              <h4 class="font-semibold text-accent">HTML5</h4>
+            </div>
+            <p class="text-xs text-[var(--muted)]">Semantic structure, forms, accessibility basics.</p>
+          </article>
+          <article class="skill-card border border-[var(--border)] bg-[var(--surface)] p-5 rounded-sm">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-2xl" aria-hidden="true">◇</span>
+              <h4 class="font-semibold text-accent">CSS3</h4>
+            </div>
+            <p class="text-xs text-[var(--muted)]">Flexbox, Grid, responsive layouts, custom properties.</p>
+          </article>
+          <article class="skill-card border border-[var(--border)] bg-[var(--surface)] p-5 rounded-sm">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-2xl" aria-hidden="true">▸</span>
+              <h4 class="font-semibold text-accent">JavaScript</h4>
+            </div>
+            <p class="text-xs text-[var(--muted)]">DOM, ES6+, fetch, modular front-end logic.</p>
+          </article>
+          <article class="skill-card border border-[var(--border)] bg-[var(--surface)] p-5 rounded-sm">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-2xl" aria-hidden="true">⌁</span>
+              <h4 class="font-semibold text-accent">Python</h4>
+            </div>
+            <p class="text-xs text-[var(--muted)]">Scripts, APIs, data handling, learning ML basics.</p>
+          </article>
+          <article class="skill-card border border-[var(--border)] bg-[var(--surface)] p-5 rounded-sm">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-2xl" aria-hidden="true">⎇</span>
+              <h4 class="font-semibold text-accent">Git</h4>
+            </div>
+            <p class="text-xs text-[var(--muted)]">Branches, commits, GitHub collaboration.</p>
+          </article>
+          <article class="skill-card border border-[var(--border)] bg-[var(--surface)] p-5 rounded-sm">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-2xl" aria-hidden="true">◎</span>
+              <h4 class="font-semibold text-accent">Tailwind-ready</h4>
+            </div>
+            <p class="text-xs text-[var(--muted)]">Utility-first styling for fast, consistent UIs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-20 border-t border-[var(--border)] bg-[var(--bg-elevated)]/50">
+      <div class="max-w-6xl mx-auto px-4">
+        <p class="text-accent text-sm mb-2">&gt; _open projects/</p>
+        <h3 class="text-2xl md:text-3xl font-bold mb-4">Projects</h3>
+        <p class="text-[var(--muted)] text-sm mb-10 max-w-2xl">
+          Placeholder tiles—replace with your GitHub repos or live demos when ready.
+        </p>
+        <div class="grid md:grid-cols-2 gap-4">
+          <a href="#" class="skill-card block border border-[var(--border)] bg-[var(--surface)] p-6 rounded-sm no-underline text-inherit">
+            <h4 class="font-semibold text-accent mb-2">Portfolio site</h4>
+            <p class="text-xs text-[var(--muted)]">This page — static HTML, Tailwind, terminal aesthetic.</p>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="skill-card block border border-[var(--border)] bg-[var(--surface)] p-6 rounded-sm no-underline text-inherit">
+            <h4 class="font-semibold text-accent mb-2">GitHub</h4>
+            <p class="text-xs text-[var(--muted)]">Add your profile URL and featured repositories here.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 border-t border-[var(--border)]">
+      <div class="max-w-6xl mx-auto px-4">
+        <p class="text-accent text-sm mb-2">&gt; _contact --secure</p>
+        <h3 class="text-2xl md:text-3xl font-bold mb-8">Contact</h3>
+        <div class="grid md:grid-cols-2 gap-8 max-w-3xl">
+          <div class="space-y-4 text-sm">
+            <p>
+              <span class="text-[var(--muted)] block mb-1">Email</span>
+              <a href="mailto:elmiraymen2@gmail.com" class="text-accent hover:underline">elmiraymen2@gmail.com</a>
+            </p>
+            <p>
+              <span class="text-[var(--muted)] block mb-1">Location</span>
+              <span>Oujda, Morocco</span>
+            </p>
+            <p>
+              <span class="text-[var(--muted)] block mb-1">Age</span>
+              <span>21</span>
+            </p>
+          </div>
+          <div class="border border-[var(--border)] bg-[var(--surface)] p-6 rounded-sm text-sm text-[var(--muted)]">
+            <p class="mb-2 text-[var(--text)] font-medium">$ ping elmiraymen2@gmail.com</p>
+            <p>Reply within a few days. For CV, ask by email and attach what you need (PDF preferred).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-[var(--border)] py-8 text-center text-xs text-[var(--muted)]">
+    <p>© <span id="year"></span> Elmir Aymen · INIT_CONNECTION</p>
+  </footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var toggle = document.getElementById("themeToggle");
+      var icon = document.getElementById("themeIcon");
+      var stored = localStorage.getItem("theme");
+
+      function applyTheme(theme) {
+        root.setAttribute("data-theme", theme);
+        localStorage.setItem("theme", theme);
+        icon.textContent = theme === "dark" ? "☀" : "☾";
+      }
+
+      if (stored === "light" || stored === "dark") {
+        applyTheme(stored);
+      } else if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+        applyTheme("light");
+      }
+
+      toggle.addEventListener("click", function () {
+        var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        applyTheme(next);
+      });
+
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+        anchor.addEventListener("click", function (e) {
+          var id = anchor.getAttribute("href");
+          if (id.length > 1) {
+            var el = document.querySelector(id);
+            if (el) e.preventDefault();
+            el.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
